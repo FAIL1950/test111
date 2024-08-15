@@ -1,7 +1,7 @@
 let elm = document.getElementById("photo");
 elm.style.position = "absolute";
 let startX, startY, initialX, initialY;
-/*window.addEventListener('wheel', (event) => {
+window.addEventListener('wheel', (event) => {
     let currentWidth = window.getComputedStyle(elm).width;
     let numericWidth = parseFloat(currentWidth);
     let newWidth;
@@ -14,7 +14,7 @@ let startX, startY, initialX, initialY;
         newWidth = numericWidth - 50;
     }
     elm.style.width = newWidth + 'px';
-});*/
+});
 
 let myHammer = new Hammer(elm);
 myHammer.get('pinch').set({ enable: true });
